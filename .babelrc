@@ -1,0 +1,14 @@
+{
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-typescript",
+    [
+      "@babel/preset-react",
+      {
+        // This syntax is used to allow the React 17 automatic JSX transform.
+        // If you remove this, you need to add `import React from 'react'` into any JSX/TSX files
+        "runtime": "automatic"
+      }
+    ]
+  ]
+}
